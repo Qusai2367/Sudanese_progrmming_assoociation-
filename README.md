@@ -5,14 +5,14 @@ This project is a **React-based Single Page Application (SPA)** showcasing a sim
 ## 🚀 Features
 
 -   **Post List View**
-    -   ![Post List View*][./src/assets/lis.jpg] 
+    -   ![Post List View*](./src/assets/lis.jpg) 
     -   Displays all blog posts with cover image, title, preview snippet, author profile, and timestamp.
     -   Like button for each post.
     -   Comment count shown.
 
 -   **Post Details View**
 
-    -   ![Post Details View*][./src/assets/de.jpg]
+    -   ![Post Details View*](./src/assets/de.jpg)
     -   Displays full post content with large responsive image.
     -   Shows post timestamp and author details with profile photo.
     -   Integrated **Like button**.
@@ -20,23 +20,23 @@ This project is a **React-based Single Page Application (SPA)** showcasing a sim
 
 -   **Comment System**
 
-    -   ![comment][./src/assets/co.jpg]
+    -   ![comment](./src/assets/co.jpg)
     -   Each post supports threaded comments with replies.
     -   Each comment/reply includes an author and like button.
 
 -   **Responsive Images**
 
-    -   ![responsive][./src/assets/res1.jpg]
+    -   ![responsive](./src/assets/res1.jpg)
     -   Post images scale properly (`aspect-video`) on list view and `h-auto` within details view.
     -   Author photos are consistently styled.
 
 -   **Responsive Layout**
-    -   ![responsive][./src/assets/res1.jpg]
+    -   ![responsive](./src/assets/res1.jpg)
     -   Designed using **Tailwind CSS**.
     -   Grid layout adapts to mobile, tablet, and desktop screens.
 
 -   **Fallback Handling**
-    -   ![Fallback][./src/assets/cen.jpg]
+    -   ![Fallback](./src/assets/cen.jpg)
     -   If `posts.js` is empty, a **"No posts found"** message is displayed.
 
 ## 🛠️ Tech Stack
