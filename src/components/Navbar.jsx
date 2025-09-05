@@ -30,19 +30,21 @@ const Navbar = () => {
 
     return (
         <div>
-            <div className="md:hidden flex justify-between items-center p-4">
+            <div className="md:hidden flex justify-between items-center mb-7 sm:p-4">
                 <h1 className="text-white text-2xl font-bold cursor-pointer">
                     Logo
                 </h1>
-                <button onClick={toggleMenu} className="text-white cursor-pointer hover:text-primary">
+                <button
+                    onClick={toggleMenu}
+                    className="text-white cursor-pointer hover:text-primary"
+                >
                     <AlignCenter />
                 </button>
             </div>
-            <div className="hidden md:flex justify-between items-center p-5 bg-gray-800 rounded-2xl">
+            <div className="hidden md:flex justify-between items-center p-5  mb-7 bg-gray-800 rounded-2xl">
                 <h1 className="text-white text-2xl font-bold">Logo</h1>
                 <NavLinks links={links} className="flex-row" />
                 <div className="flex items-center gap-4">
-                   
                     <button
                         onClick={toggleLogin}
                         className="border-primary border-2 cursor-pointer hover:bg-primary text-white font-bold py-2 px-4 rounded"
@@ -69,7 +71,6 @@ const Navbar = () => {
                 </div>
                 <NavLinks links={links} className="flex-col" />
                 <div className="flex items-center gap-4 m-5">
-            
                     <button
                         onClick={toggleLogin}
                         className="border-primary border-2 cursor-pointer hover:bg-primary text-white font-bold py-2 px-4 rounded"

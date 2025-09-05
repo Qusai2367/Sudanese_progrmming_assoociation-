@@ -13,8 +13,8 @@ const PostDetails = () => {
 
 
     return (
-        <div className="p-8 text-white">
-            <h1 className="text-4xl font-bold">{post.title}</h1>
+        <div className="lg:p-8 md:p-5 sm:small">
+            <h1 className="lg:text-5xl md:text-4xl font-bold">{post.title}</h1>
             <p className="text-sm text-gray-500 mt-1">
                 {new Date(post.createdAt).toLocaleString("en-US", {
                     dateStyle: "medium",
@@ -22,9 +22,18 @@ const PostDetails = () => {
                 })}
             </p>
             <div className="my-4">
-                <img src={post.PostImage} alt={post.title} className="w-full h-auto object-cover rounded-md max-h-[500px]" />
+                <img
+                    src={post.PostImage}
+                    alt={post.title}
+                    className={`cursor-pointer ${
+                        post.PostImage
+                            ? "w-full h-125 cover rounded-md mb-3"
+                            : "hidden"
+                    }`}
+                    // className="w-full h-auto object-cover rounded-md max-h-[500px]"
+                />
             </div>
-            <p className="mt-4">{post.content}</p>
+            <p className="mt-4 sm:text-sm ">{post.content}</p>
             <div className="mt-4">
                 <LikeButton initialLikes={post.likes} />
             </div>
